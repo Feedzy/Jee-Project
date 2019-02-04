@@ -11,6 +11,9 @@
     <title>Title</title>
 </head>
 <body>
-    Welcome Home
+    <%
+        String message = (String) request.getAttribute("variable");
+        out.println(message);
+    %>
 </body>
 </html>
